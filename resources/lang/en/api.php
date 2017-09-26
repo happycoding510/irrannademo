@@ -36,7 +36,7 @@ not be same as old password',
 	'push' => [
 		'request_accepted' => 'Your Ride Accepted by a Driver',
 		'arrived' => 'Driver Arrived at your Location',
-		'dropped' => 'your ride is complete successfully. you have to pay',
+		'dropped' => 'Your ride is completed successfully. you have to pay',
 		'incoming_request' => 'New Incoming Ride',
 		'added_money_to_wallet' => ' Added to your Wallet',
 		'charged_from_wallet' => ' Charged from your Wallet',

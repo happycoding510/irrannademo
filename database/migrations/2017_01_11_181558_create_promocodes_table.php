@@ -17,6 +17,7 @@ class CreatePromocodesTable extends Migration
             $table->increments('id');
             $table->string('promo_code');
             $table->float('discount',10, 2)->default(0);
+            $table->enum('discount_type', ['percent','amount'])->default('percent');
             $table->dateTime('expiration');
             $table->enum('status', ['ADDED','EXPIRED']);
             $table->softDeletes();

@@ -165,13 +165,11 @@ class TokenController extends Controller
         }
     }
 
- /**
+    /**
      * Forgot Password.
      *
      * @return \Illuminate\Http\Response
      */
-
-
     public function forgot_password(Request $request){
 
         $this->validate($request, [
@@ -216,17 +214,12 @@ class TokenController extends Controller
         try{
 
             $Provider = Provider::findOrFail($request->id);
-            //if(password_verify($request->password, $Provider->password)){
-                $Provider->password = bcrypt($request->password);
-                $Provider->save();
-                if($request->ajax()) {
-                    return response()->json(['message' => 'Password Updated']);
-                }
-            // }else{
-            //     if($request->ajax()) {
-            //         return response()->json(['error' => 'Previous password and reset password are same, so please try again with different password!'], 422);
-            //     }
-            // }
+
+            $Provider->password = bcrypt($request->password);
+            $Provider->save();
+            if($request->ajax()) {
+                return response()->json(['message' => 'Password Updated']);
+            }
 
         }catch (Exception $e) {
             if($request->ajax()) {

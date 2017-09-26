@@ -22,7 +22,7 @@ class UserRequests extends Model
         'status',
         'cancelled_by',
         'is_track',
-        'paid',
+        'travel_time',
         'distance',
         's_latitude',
         'd_latitude',

@@ -23,7 +23,6 @@ Route::post('/auth/google', 'ProviderAuth\TokenController@googleViaAPI');
 Route::post('/forgot/password',     'ProviderAuth\TokenController@forgot_password');
 Route::post('/reset/password',      'ProviderAuth\TokenController@reset_password');
 
-
 Route::group(['middleware' => ['provider.api']], function () {
 
 Route::post('/refresh/token' , 'ProviderAuth\TokenController@refresh_token');

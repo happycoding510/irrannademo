@@ -182,7 +182,7 @@
 
     <div class="row find-city no-margin">
         <div class="container">
-            <h2>{{Setting::get('site_title','Tranxit')}} is in Chennai</h2>
+            <h2>{{Setting::get('site_title','Tranxit')}} is in your city</h2>
             <form>
                 <div class="input-group find-form">
                     <input type="text" class="form-control"  placeholder="Search" >

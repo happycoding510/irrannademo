@@ -478,6 +478,11 @@ class TripController extends Controller
                     $UserRequest->d_address =  $request->address?:$UserRequest->d_address;
                 }
                 $UserRequest->finished_at = Carbon::now();
+                $StartedDate  = date_create($UserRequest->started_at);
+                $FinisedDate  = Carbon::now();
+                $TimeInterval = date_diff($StartedDate,$FinisedDate);
+                $MintuesTime  = $TimeInterval->i;
+                $UserRequest->travel_time = $MintuesTime;
                 $UserRequest->save();
                 $UserRequest->with('user')->findOrFail($id);
                 $UserRequest->invoice = $this->invoice($id);
