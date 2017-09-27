@@ -55,6 +55,8 @@ Route::group(['middleware' => ['auth:api']], function () {
 	Route::post('/promocode/add' , 	'UserApiController@add_promocode');
 	// card payment
     Route::resource('card', 		'Resource\CardResource');
+    // card payment
+    Route::resource('location', 'Resource\FavouriteLocationResource');
     // passbook
 	Route::get('/wallet/passbook' , 'UserApiController@wallet_passbook');
 	Route::get('/promo/passbook' , 	'UserApiController@promo_passbook');
