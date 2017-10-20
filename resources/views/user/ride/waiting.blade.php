@@ -406,8 +406,6 @@
 	                            	@else
 	                            		{this.props.currency}{{$promo->discount}}
 	                            	@endif
-                            	@else
-                            		{this.props.currency}{{$promo->discount}}
                             	@endif
 
 								)</dt>
