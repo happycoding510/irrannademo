@@ -121,10 +121,8 @@ class ProviderDocumentResource extends Controller
     public function update(Request $request, $provider, $id)
     {
         try {
-
             $Document = ProviderDocument::where('provider_id', $provider)
-                ->where('document_id', $id)
-                ->firstOrFail();
+                ->findOrFail($id);
             $Document->update(['status' => 'ACTIVE']);
 
             return redirect()
