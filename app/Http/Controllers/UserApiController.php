@@ -1077,7 +1077,7 @@ class UserApiController extends Controller
                 $ActiveProviders = ProviderService::AvailableServiceProvider($request->service)
                                     ->get()->pluck('provider_id');
 
-                $Providers = Provider::whereIn('id', $ActiveProviders)
+                $Providers = Provider::with('service')->whereIn('id', $ActiveProviders)
                     ->where('status', 'approved')
                     ->whereRaw("(1.609344 * 3956 * acos( cos( radians('$latitude') ) * cos( radians(latitude) ) * cos( radians(longitude) - radians('$longitude') ) + sin( radians('$latitude') ) * sin( radians(latitude) ) ) ) <= $distance")
                     ->get();
@@ -1087,7 +1087,7 @@ class UserApiController extends Controller
                 $ActiveProviders = ProviderService::where('status', 'active')
                                     ->get()->pluck('provider_id');
 
-                $Providers = Provider::whereIn('id', $ActiveProviders)
+                $Providers = Provider::with('service')->whereIn('id', $ActiveProviders)
                     ->where('status', 'approved')
                     ->whereRaw("(1.609344 * 3956 * acos( cos( radians('$latitude') ) * cos( radians(latitude) ) * cos( radians(longitude) - radians('$longitude') ) + sin( radians('$latitude') ) * sin( radians(latitude) ) ) ) <= $distance")
                     ->get();
