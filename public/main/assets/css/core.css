@@ -11007,3 +11007,7 @@ Dispatcher
     height: 450px;
     overflow-y: scroll;
 }
+
+.dispute-txt {
+    max-width: 200px;
+}
