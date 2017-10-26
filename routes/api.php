@@ -15,6 +15,8 @@ Route::post('/signup' , 'UserApiController@signup');
 Route::post('/logout' , 'UserApiController@logout');
 Route::post('/verify' , 'UserApiController@verify');
 
+Route::get('/setting',      'UserApiController@setting');
+
 Route::post('/auth/facebook', 		'Auth\SocialLoginController@facebookViaAPI');
 Route::post('/auth/google', 		'Auth\SocialLoginController@googleViaAPI');
 Route::post('/forgot/password',     'UserApiController@forgot_password');
