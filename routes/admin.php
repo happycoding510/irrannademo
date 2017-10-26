@@ -98,3 +98,15 @@ Route::get('/ongoing', function () {
 Route::get('/schedule', function () {
     return view('admin.dispatch.schedule');
 });
+
+Route::get('/dispute', function () {
+    return view('admin.dispute.index');
+});
+
+Route::get('/dispute-create', function () {
+    return view('admin.dispute.create');
+});
+
+Route::get('/dispute-edit', function () {
+    return view('admin.dispute.edit');
+});
