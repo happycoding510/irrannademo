@@ -81,3 +81,20 @@ Route::get('scheduled', 'Resource\TripResource@scheduled')->name('requests.sched
 
 Route::get('push', 'AdminController@push_index')->name('push.index');
 Route::post('push', 'AdminController@push_store')->name('push.store');
+
+
+Route::get('/dispatch', function () {
+    return view('admin.dispatch.index');
+});
+
+Route::get('/cancelled', function () {
+    return view('admin.dispatch.cancelled');
+});
+
+Route::get('/ongoing', function () {
+    return view('admin.dispatch.ongoing');
+});
+
+Route::get('/schedule', function () {
+    return view('admin.dispatch.schedule');
+});

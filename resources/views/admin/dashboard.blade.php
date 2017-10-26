@@ -51,6 +51,8 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="row row-md">
 		<div class="col-lg-3 col-md-6 col-xs-12">
 			<div class="box box-block bg-white tile tile-1 mb-2">
 				<div class="t-icon right"><span class="bg-primary"></span><i class="ti-view-grid"></i></div>
