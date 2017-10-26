@@ -301,7 +301,7 @@ class TripController extends Controller
                             "&markers=icon:".$map_icon."%7C".$value->s_latitude.",".$value->s_longitude.
                             "&markers=icon:".$map_icon."%7C".$value->d_latitude.",".$value->d_longitude.
                             "&path=color:0x000000|weight:3|enc:".$value->route_key.
-                            "&key=".env('GOOGLE_MAP_KEY');
+                            "&key=".Setting::get('map_key');
                 }
             }
 
@@ -339,7 +339,7 @@ class TripController extends Controller
                             "&markers=icon:".$map_icon."%7C".$value->s_latitude.",".$value->s_longitude.
                             "&markers=icon:".$map_icon."%7C".$value->d_latitude.",".$value->d_longitude.
                             "&path=color:0x000000|weight:3|enc:".$value->route_key.
-                            "&key=".env('GOOGLE_MAP_KEY');
+                            "&key=".Setting::get('map_key');
                 }
             }
             return $Jobs;
@@ -785,7 +785,7 @@ class TripController extends Controller
                             "&markers=icon:".$map_icon."%7C".$value->s_latitude.",".$value->s_longitude.
                             "&markers=icon:".$map_icon."%7C".$value->d_latitude.",".$value->d_longitude.
                             "&path=color:0x000000|weight:3|enc:".$value->route_key.
-                            "&key=".env('GOOGLE_MAP_KEY');
+                            "&key=".Setting::get('map_key');
                 }
             }
 
@@ -816,7 +816,7 @@ class TripController extends Controller
                                     "&markers=icon:".$map_icon."%7C".$value->s_latitude.",".$value->s_longitude.
                                     "&markers=icon:".$map_icon."%7C".$value->d_latitude.",".$value->d_longitude.
                                     "&path=color:0x000000|weight:3|enc:".$value->route_key.
-                                    "&key=".env('GOOGLE_MAP_KEY');
+                                    "&key=".Setting::get('map_key');
                 }
             }
             return $UserRequests;
@@ -856,7 +856,7 @@ class TripController extends Controller
                             "&markers=icon:".$map_icon."%7C".$value->s_latitude.",".$value->s_longitude.
                             "&markers=icon:".$map_icon."%7C".$value->d_latitude.",".$value->d_longitude.
                             "&path=color:0x000000|weight:3|enc:".$value->route_key.
-                            "&key=".env('GOOGLE_MAP_KEY');
+                            "&key=".Setting::get('map_key');
                 }
             }
 

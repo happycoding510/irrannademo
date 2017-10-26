@@ -351,9 +351,9 @@ class SocialLoginController extends Controller
     public function account_kit(Request $request){
 
         // Initialize variables
-        $app_id = env('FB_APP_ID');
+        $app_id = Setting::get('fb_app_id');
         $secret = env('FB_APP_SECRET');
-        $version = env('FB_APP_VERSION'); // 'v1.1' for example
+        $version = Setting::get('fb_app_version'); // 'v1.1' for example
 
         // Method to send Get request to url
         function doCurl($url) {

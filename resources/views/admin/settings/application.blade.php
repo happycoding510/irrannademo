@@ -128,6 +128,34 @@
 				</div>
 
 				<div class="form-group row">
+					<label for="map_key" class="col-xs-2 col-form-label">@lang('admin.setting.map_key')</label>
+					<div class="col-xs-10">
+						<input class="form-control" type="text" value="{{ Setting::get('map_key')  }}" name="map_key" required id="map_key" placeholder="@lang('admin.setting.map_key')">
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="fb_app_version" class="col-xs-2 col-form-label">@lang('admin.setting.fb_app_version')</label>
+					<div class="col-xs-10">
+						<input class="form-control" type="text" value="{{ Setting::get('fb_app_version')  }}" name="fb_app_version" required id="fb_app_version" placeholder="@lang('admin.setting.fb_app_version')">
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="fb_app_id" class="col-xs-2 col-form-label">@lang('admin.setting.fb_app_id')</label>
+					<div class="col-xs-10">
+						<input class="form-control" type="text" value="{{ Setting::get('fb_app_id')  }}" name="fb_app_id" required id="fb_app_id" placeholder="@lang('admin.setting.fb_app_id')">
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="fb_app_secret" class="col-xs-2 col-form-label">@lang('admin.setting.fb_app_secret')</label>
+					<div class="col-xs-10">
+						<input class="form-control" type="text" value="{{ Setting::get('fb_app_secret')  }}" name="fb_app_secret" required id="fb_app_secret" placeholder="@lang('admin.setting.fb_app_secret')">
+					</div>
+				</div>
+
+				<div class="form-group row">
 					<label for="zipcode" class="col-xs-2 col-form-label"></label>
 					<div class="col-xs-10">
 						<button type="submit" class="btn btn-primary">@lang('admin.setting.Update_Site_Settings')</button>

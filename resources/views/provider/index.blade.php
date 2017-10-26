@@ -19,7 +19,7 @@
 
 @section('scripts')
 <script type="text/javascript" src="{{asset('asset/js/rating.js')}}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries=places" defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ Setting::get('map_key') }}&libraries=places" defer></script>
 <script type="text/javascript">
     var map;
     var routeMarkers = {
