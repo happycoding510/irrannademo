@@ -142,6 +142,22 @@ class SettingsTableSeeder extends Seeder
                 'key' => 'social_login',
                 'value' => 0
             ],
+            [
+                'key' => 'map_key',
+                'value' => ''
+            ],
+            [
+                'key' => 'fb_app_version',
+                'value' => ''
+            ],
+            [
+                'key' => 'fb_app_id',
+                'value' => ''
+            ],
+            [
+                'key' => 'fb_app_secret',
+                'value' => ''
+            ],
         ]);
     }
 }

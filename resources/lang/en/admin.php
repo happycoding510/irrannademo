@@ -268,6 +268,10 @@ return [
 	'Contact_Email' => 'Contact Email',
 	'Social_Login' => 'Social Login',
 	'Update_Site_Settings' => 'Update Site Settings',
+	'map_key' => 'Google Map Key',
+	'fb_app_version' => 'FB App Version',
+	'fb_app_id' => 'FB App ID',
+	'fb_app_secret' => 'FB App Secret',
 
 	],'users' => [
 	'Add_User' => 'Add User',

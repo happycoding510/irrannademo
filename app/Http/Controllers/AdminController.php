@@ -182,6 +182,10 @@ class AdminController extends Controller
         Setting::set('contact_email', $request->contact_email);
         Setting::set('site_copyright', $request->site_copyright);
         Setting::set('social_login', $request->social_login);
+        Setting::set('map_key', $request->map_key);
+        Setting::set('fb_app_version', $request->fb_app_version);
+        Setting::set('fb_app_id', $request->fb_app_id);
+        Setting::set('fb_app_secret', $request->fb_app_secret);
         Setting::set('manual_request', $request->manual_request == 'on' ? 1 : 0 );
         Setting::set('broadcast_request', $request->broadcast_request == 'on' ? 1 : 0 );
         Setting::set('track_distance', $request->track_distance == 'on' ? 1 : 0 );

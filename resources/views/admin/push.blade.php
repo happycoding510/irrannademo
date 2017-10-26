@@ -345,6 +345,6 @@
 
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAP_KEY')}}&libraries=places&callback=initAutocomplete"
+<script src="https://maps.googleapis.com/maps/api/js?key={{Setting::get('map_key')}}&libraries=places&callback=initAutocomplete"
         async defer></script>
 @endsection

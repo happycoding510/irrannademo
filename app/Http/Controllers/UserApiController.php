@@ -356,7 +356,7 @@ class UserApiController extends Controller
 
         try{
 
-            $details = "https://maps.googleapis.com/maps/api/directions/json?origin=".$request->s_latitude.",".$request->s_longitude."&destination=".$request->d_latitude.",".$request->d_longitude."&mode=driving&key=".env('GOOGLE_MAP_KEY');
+            $details = "https://maps.googleapis.com/maps/api/directions/json?origin=".$request->s_latitude.",".$request->s_longitude."&destination=".$request->d_latitude.",".$request->d_longitude."&mode=driving&key=".Setting::get('map_key');
 
             $json = curl($details);
 
@@ -717,7 +717,7 @@ class UserApiController extends Controller
                             "&markers=icon:".$map_icon."%7C".$value->s_latitude.",".$value->s_longitude.
                             "&markers=icon:".$map_icon."%7C".$value->d_latitude.",".$value->d_longitude.
                             "&path=color:0x191919|weight:3|enc:".$value->route_key.
-                            "&key=".env('GOOGLE_MAP_KEY');
+                            "&key=".Setting::get('map_key');
                 }
             }
             return $UserRequests;
@@ -746,7 +746,7 @@ class UserApiController extends Controller
 
         try{
 
-            $details = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=".$request->s_latitude.",".$request->s_longitude."&destinations=".$request->d_latitude.",".$request->d_longitude."&mode=driving&sensor=false&key=".env('GOOGLE_MAP_KEY');
+            $details = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=".$request->s_latitude.",".$request->s_longitude."&destinations=".$request->d_latitude.",".$request->d_longitude."&mode=driving&sensor=false&key=".Setting::get('map_key');
 
             $json = curl($details);
 
@@ -843,7 +843,7 @@ class UserApiController extends Controller
                             "&markers=icon:".$map_icon."%7C".$value->s_latitude.",".$value->s_longitude.
                             "&markers=icon:".$map_icon."%7C".$value->d_latitude.",".$value->d_longitude.
                             "&path=color:0x191919|weight:3|enc:".$value->route_key.
-                            "&key=".env('GOOGLE_MAP_KEY');
+                            "&key=".Setting::get('map_key');
                 }
             }
             return $UserRequests;
@@ -1003,7 +1003,7 @@ class UserApiController extends Controller
                             "&markers=icon:".$map_icon."%7C".$value->s_latitude.",".$value->s_longitude.
                             "&markers=icon:".$map_icon."%7C".$value->d_latitude.",".$value->d_longitude.
                             "&path=color:0x000000|weight:3|enc:".$value->route_key.
-                            "&key=".env('GOOGLE_MAP_KEY');
+                            "&key=".Setting::get('map_key');
                 }
             }
             return $UserRequests;
@@ -1040,7 +1040,7 @@ class UserApiController extends Controller
                             "&markers=icon:".$map_icon."%7C".$value->s_latitude.",".$value->s_longitude.
                             "&markers=icon:".$map_icon."%7C".$value->d_latitude.",".$value->d_longitude.
                             "&path=color:0x000000|weight:3|enc:".$value->route_key.
-                            "&key=".env('GOOGLE_MAP_KEY');
+                            "&key=".Setting::get('map_key');
                 }
             }
             return $UserRequests;

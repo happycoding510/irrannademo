@@ -134,9 +134,9 @@
   AccountKit_OnInteractive = function(){
     AccountKit.init(
       {
-        appId: {{env('FB_APP_ID')}}, 
+        appId: {{Setting::get('fb_app_id')}}, 
         state:"state", 
-        version: "{{env('FB_APP_VERSION')}}",
+        version: "{{Setting::get('fb_app_version')}}",
         fbAppEventsEnabled:true
       }
     );
