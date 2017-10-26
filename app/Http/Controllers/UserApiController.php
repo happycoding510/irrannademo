@@ -37,11 +37,6 @@ use App\Http\Controllers\ProviderResources\TripController;
 
 class UserApiController extends Controller
 {
-
-    public function setting()
-    {
-        return Setting::all();
-    }
     /**
      * Show the application dashboard.
      *
