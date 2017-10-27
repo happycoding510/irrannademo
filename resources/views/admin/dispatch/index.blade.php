@@ -24,7 +24,7 @@
                 <div class="collapse navbar-toggleable-sm" id="process-filters">
                     <ul class="nav navbar-nav dispatcher-nav">
                         <li class="nav-item active"><span class="nav-link" href="#">Open</span></li>
-                        <li class="nav-item "><span class="nav-link" href="#">Ongpoing</span></li>
+                        <li class="nav-item "><span class="nav-link" href="#">Ongoing</span></li>
                         <li class="nav-item "><span class="nav-link" href="#">Scheduled</span></li>
                     </ul>
                 </div>
@@ -114,7 +114,7 @@
             	<div class="card my-card">
             		<div class="card-header text-uppercase"><b>MAP</b></div>
             		<div class="card-body">
-            			<div id="map" style="height: 450px;"></div>
+            			<div style="width: 100%"><iframe width="100%" height="450" src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=600&hl=ru&q=Malet%20St%2C%20London%20WC1E%207HU%2C%20United%20Kingdom+(Provider)&ie=UTF8&t=&z=14&iwloc=A&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/custom-google-maps/">Embed Google Map</a> by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe></div><br />
             		</div>
             	</div>
             </div>
