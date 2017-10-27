@@ -23,9 +23,8 @@
                 </ul>
                 <div class="collapse navbar-toggleable-sm" id="process-filters">
                     <ul class="nav navbar-nav dispatcher-nav">
-                        <li class="nav-item active"><span class="nav-link" href="#">Searching</span></li>
-                        <li class="nav-item "><span class="nav-link" href="#">Cancelled</span></li>
-                        <li class="nav-item "><span class="nav-link" href="#">Ongoing</span></li>
+                        <li class="nav-item active"><span class="nav-link" href="#">Open</span></li>
+                        <li class="nav-item "><span class="nav-link" href="#">Ongpoing</span></li>
                         <li class="nav-item "><span class="nav-link" href="#">Scheduled</span></li>
                     </ul>
                 </div>
@@ -34,17 +33,16 @@
         <div class="dispatch-content row">
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header text-uppercase"><b>Searching List</b></div>
+                    <div class="card-header text-uppercase"><b>Open List</b></div>
                     <div class="items-list">
                     	<!-- Item Block Starts -->
                         <div class="il-item">
-                        	<a class="btn btn-danger" href="/admin/dispatcher/cancel?request_id=651">Cancel Ride</a>
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
+                                        <h5 class="mb-0-5">
                                         	Paul Wesley
-                                            <span class="tag tag-warning pull-right">SEARCHING</span></p>
+                                            <span class="tag tag-warning pull-right">Open</span></h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>
@@ -52,18 +50,17 @@
                                     </div>
                                 </div>
                             </a>
+                            <a class="btn btn-danger mt-1" href="/admin/dispatcher/cancel?request_id=651">Cancel Ride</a>
                         </div>
                         <!-- Item Block Ends -->
                         <!-- Item Block Starts -->
                         <div class="il-item">
-                        	<a class="btn btn-danger" href="/admin/dispatcher/cancel?request_id=651">Cancel Ride</a>
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
-                                        	Paul Wesley
-                                            <span class="tag tag-warning pull-right">SEARCHING</span>
-                                        </p>
+                                        <h5 class="mb-0-5">
+                                            Paul Wesley
+                                            <span class="tag tag-warning pull-right">Open</span></h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>
@@ -71,17 +68,17 @@
                                     </div>
                                 </div>
                             </a>
+                            <a class="btn btn-danger mt-1" href="/admin/dispatcher/cancel?request_id=651">Cancel Ride</a>
                         </div>
                         <!-- Item Block Ends -->
                         <!-- Item Block Starts -->
                         <div class="il-item">
-                        	<a class="btn btn-danger" href="/admin/dispatcher/cancel?request_id=651">Cancel Ride</a>
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
-                                        	Paul Wesley
-                                            <span class="tag tag-warning pull-right">SEARCHING</span></p>
+                                        <h5 class="mb-0-5">
+                                            Paul Wesley
+                                            <span class="tag tag-warning pull-right">Open</span></h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>
@@ -89,18 +86,17 @@
                                     </div>
                                 </div>
                             </a>
+                            <a class="btn btn-danger mt-1" href="/admin/dispatcher/cancel?request_id=651">Cancel Ride</a>
                         </div>
                         <!-- Item Block Ends -->
                         <!-- Item Block Starts -->
                         <div class="il-item">
-                        	<a class="btn btn-danger" href="/admin/dispatcher/cancel?request_id=651">Cancel Ride</a>
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
-                                        	Paul Wesley
-                                            <span class="tag tag-warning pull-right">SEARCHING</span>
-                                        </p>
+                                        <h5 class="mb-0-5">
+                                            Paul Wesley
+                                            <span class="tag tag-warning pull-right">Open</span></h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>
@@ -108,6 +104,7 @@
                                     </div>
                                 </div>
                             </a>
+                            <a class="btn btn-danger mt-1" href="/admin/dispatcher/cancel?request_id=651">Cancel Ride</a>
                         </div>
                         <!-- Item Block Ends -->
                     </div>

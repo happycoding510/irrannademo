@@ -11011,3 +11011,16 @@ Dispatcher
 .dispute-txt {
     max-width: 200px;
 }
+
+.dis-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 0 auto 20px;
+}
+
+.bg-img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

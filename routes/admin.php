@@ -99,6 +99,14 @@ Route::get('/schedule', function () {
     return view('admin.dispatch.schedule');
 });
 
+Route::get('/add', function () {
+    return view('admin.dispatch.add');
+});
+
+Route::get('/assign-provider', function () {
+    return view('admin.dispatch.assign-provider');
+});
+
 Route::get('/dispute', function () {
     return view('admin.dispute.index');
 });

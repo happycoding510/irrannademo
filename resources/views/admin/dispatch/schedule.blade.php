@@ -23,8 +23,7 @@
                 </ul>
                 <div class="collapse navbar-toggleable-sm" id="process-filters">
                     <ul class="nav navbar-nav dispatcher-nav">
-                        <li class="nav-item"><span class="nav-link" href="#">Searching</span></li>
-                        <li class="nav-item"><span class="nav-link" href="#">Cancelled</span></li>
+                        <li class="nav-item"><span class="nav-link" href="#">Open</span></li>
                         <li class="nav-item"><span class="nav-link" href="#">Ongoing</span></li>
                         <li class="nav-item active"><span class="nav-link" href="#">Scheduled</span></li>
                     </ul>
@@ -34,17 +33,17 @@
         <div class="dispatch-content row">
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header text-uppercase"><b>Cancelled List</b></div>
+                    <div class="card-header text-uppercase"><b>Scheduled List</b></div>
                     <div class="items-list">
                     	<!-- Item Block Starts -->
                         <div class="il-item">
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
+                                        <h5 class="mb-0-5">
                                         	Paul Wesley
                                             <span class="tag tag-info pull-right">Scheduled</span>
-                                       	</p>
+                                       	</h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>
@@ -59,10 +58,10 @@
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
+                                        <h5 class="mb-0-5">
                                         	Paul Wesley
                                             <span class="tag tag-info pull-right">Scheduled</span>
-                                       	</p>
+                                       	</h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>
@@ -77,10 +76,10 @@
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
+                                        <h5 class="mb-0-5">
                                         	Paul Wesley
                                             <span class="tag tag-info pull-right">Scheduled</span>
-                                       	</p>
+                                       	</h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>
@@ -95,10 +94,10 @@
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
+                                        <h5 class="mb-0-5">
                                         	Paul Wesley
                                             <span class="tag tag-info pull-right">Scheduled</span>
-                                       	</p>
+                                       	</h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>
@@ -113,10 +112,10 @@
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
+                                        <h5 class="mb-0-5">
                                         	Paul Wesley
                                             <span class="tag tag-info pull-right">Scheduled</span>
-                                       	</p>
+                                       	</h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>
@@ -131,10 +130,10 @@
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
+                                        <h5 class="mb-0-5">
                                         	Paul Wesley
                                             <span class="tag tag-info pull-right">Scheduled</span>
-                                       	</p>
+                                       	</h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>
@@ -149,10 +148,10 @@
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
+                                        <h5 class="mb-0-5">
                                         	Paul Wesley
                                             <span class="tag tag-info pull-right">Scheduled</span>
-                                       	</p>
+                                       	</h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>
@@ -167,10 +166,10 @@
                             <a class="text-black" href="#">
                                 <div class="media">
                                     <div class="media-body">
-                                        <p class="mb-0-5">
+                                        <h5 class="mb-0-5">
                                         	Paul Wesley
                                             <span class="tag tag-info pull-right">Scheduled</span>
-                                       	</p>
+                                       	</h5>
                                         <h6 class="media-heading">From: Florida, United States</h6>
                                         <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
                                         <h6 class="media-heading">Payment: CASH</h6>

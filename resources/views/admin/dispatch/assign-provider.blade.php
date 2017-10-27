@@ -24,8 +24,8 @@
                 <div class="collapse navbar-toggleable-sm" id="process-filters">
                     <ul class="nav navbar-nav dispatcher-nav">
                         <li class="nav-item"><span class="nav-link" href="#">Open</span></li>
-                        <li class="nav-item active"><span class="nav-link" href="#">Ongoing</span></li>
-                        <li class="nav-item"><span class="nav-link" href="#">Scheduled</span></li>
+                        <li class="nav-item "><span class="nav-link" href="#">Ongoing</span></li>
+                        <li class="nav-item "><span class="nav-link" href="#">Scheduled</span></li>
                     </ul>
                 </div>
             </nav>
@@ -33,7 +33,7 @@
         <div class="dispatch-content row">
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header text-uppercase"><b>Ongoing List</b></div>
+                    <div class="card-header text-uppercase"><b>Nearby Providers</b></div>
                     <div class="items-list">
                     	<!-- Item Block Starts -->
                         <div class="il-item">
@@ -41,16 +41,16 @@
                                 <div class="media">
                                     <div class="media-body">
                                         <h5 class="mb-0-5">
-                                        	Paul Wesley
-                                            <span class="tag tag-primary pull-right">Ongoing</span>
-                                       	</h5>
-                                        <h6 class="media-heading">From: Florida, United States</h6>
-                                        <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
-                                        <h6 class="media-heading">Payment: CASH</h6>
-                                        <span class="text-muted">Manual Assignment : 2017-10-24 16:51:15</span>
+                                            Paul Wesley
+                                            <span class="tag tag-info pull-right">Online</span>
+                                        </h5>
+                                        <h6 class="media-heading">Address: Florida, United States</h6>
+                                        <h6 class="media-heading">Phone No: +908 785787970</h6>
+                                        <h6 class="media-heading">Email: 123@demo.com</h6>
                                     </div>
                                 </div>
                             </a>
+                            <a class="btn btn-success mt-1" href="/admin/dispatcher/cancel?request_id=651">Assign Provider</a>
                         </div>
                         <!-- Item Block Ends -->
                         <!-- Item Block Starts -->
@@ -59,16 +59,16 @@
                                 <div class="media">
                                     <div class="media-body">
                                         <h5 class="mb-0-5">
-                                        	Paul Wesley
-                                            <span class="tag tag-primary pull-right">Ongoing</span>
-                                       	</h5>
-                                        <h6 class="media-heading">From: Florida, United States</h6>
-                                        <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
-                                        <h6 class="media-heading">Payment: CASH</h6>
-                                        <span class="text-muted">Manual Assignment : 2017-10-24 16:51:15</span>
+                                            Paul Wesley
+                                            <span class="tag tag-info pull-right">Online</span>
+                                        </h5>
+                                        <h6 class="media-heading">Address: Florida, United States</h6>
+                                        <h6 class="media-heading">Phone No: +908 785787970</h6>
+                                        <h6 class="media-heading">Email: 123@demo.com</h6>
                                     </div>
                                 </div>
                             </a>
+                            <a class="btn btn-success mt-1" href="/admin/dispatcher/cancel?request_id=651">Assign Provider</a>
                         </div>
                         <!-- Item Block Ends -->
                         <!-- Item Block Starts -->
@@ -77,16 +77,16 @@
                                 <div class="media">
                                     <div class="media-body">
                                         <h5 class="mb-0-5">
-                                        	Paul Wesley
-                                            <span class="tag tag-primary pull-right">Ongoing</span>
-                                       	</h5>
-                                        <h6 class="media-heading">From: Florida, United States</h6>
-                                        <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
-                                        <h6 class="media-heading">Payment: CASH</h6>
-                                        <span class="text-muted">Manual Assignment : 2017-10-24 16:51:15</span>
+                                            Paul Wesley
+                                            <span class="tag tag-info pull-right">Online</span>
+                                        </h5>
+                                        <h6 class="media-heading">Address: Florida, United States</h6>
+                                        <h6 class="media-heading">Phone No: +908 785787970</h6>
+                                        <h6 class="media-heading">Email: 123@demo.com</h6>
                                     </div>
                                 </div>
                             </a>
+                            <a class="btn btn-success mt-1" href="/admin/dispatcher/cancel?request_id=651">Assign Provider</a>
                         </div>
                         <!-- Item Block Ends -->
                         <!-- Item Block Starts -->
@@ -95,16 +95,16 @@
                                 <div class="media">
                                     <div class="media-body">
                                         <h5 class="mb-0-5">
-                                        	Paul Wesley
-                                            <span class="tag tag-primary pull-right">Ongoing</span>
-                                       	</h5>
-                                        <h6 class="media-heading">From: Florida, United States</h6>
-                                        <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
-                                        <h6 class="media-heading">Payment: CASH</h6>
-                                        <span class="text-muted">Manual Assignment : 2017-10-24 16:51:15</span>
+                                            Paul Wesley
+                                            <span class="tag tag-info pull-right">Online</span>
+                                        </h5>
+                                        <h6 class="media-heading">Address: Florida, United States</h6>
+                                        <h6 class="media-heading">Phone No: +908 785787970</h6>
+                                        <h6 class="media-heading">Email: 123@demo.com</h6>
                                     </div>
                                 </div>
                             </a>
+                            <a class="btn btn-success mt-1" href="/admin/dispatcher/cancel?request_id=651">Assign Provider</a>
                         </div>
                         <!-- Item Block Ends -->
                         <!-- Item Block Starts -->
@@ -113,16 +113,16 @@
                                 <div class="media">
                                     <div class="media-body">
                                         <h5 class="mb-0-5">
-                                        	Paul Wesley
-                                            <span class="tag tag-primary pull-right">Ongoing</span>
-                                       	</h5>
-                                        <h6 class="media-heading">From: Florida, United States</h6>
-                                        <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
-                                        <h6 class="media-heading">Payment: CASH</h6>
-                                        <span class="text-muted">Manual Assignment : 2017-10-24 16:51:15</span>
+                                            Paul Wesley
+                                            <span class="tag tag-info pull-right">Online</span>
+                                        </h5>
+                                        <h6 class="media-heading">Address: Florida, United States</h6>
+                                        <h6 class="media-heading">Phone No: +908 785787970</h6>
+                                        <h6 class="media-heading">Email: 123@demo.com</h6>
                                     </div>
                                 </div>
                             </a>
+                            <a class="btn btn-success mt-1" href="/admin/dispatcher/cancel?request_id=651">Assign Provider</a>
                         </div>
                         <!-- Item Block Ends -->
                         <!-- Item Block Starts -->
@@ -131,34 +131,16 @@
                                 <div class="media">
                                     <div class="media-body">
                                         <h5 class="mb-0-5">
-                                        	Paul Wesley
-                                            <span class="tag tag-primary pull-right">Ongoing</span>
-                                       	</h5>
-                                        <h6 class="media-heading">From: Florida, United States</h6>
-                                        <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
-                                        <h6 class="media-heading">Payment: CASH</h6>
-                                        <span class="text-muted">Manual Assignment : 2017-10-24 16:51:15</span>
+                                            Paul Wesley
+                                            <span class="tag tag-info pull-right">Online</span>
+                                        </h5>
+                                        <h6 class="media-heading">Address: Florida, United States</h6>
+                                        <h6 class="media-heading">Phone No: +908 785787970</h6>
+                                        <h6 class="media-heading">Email: 123@demo.com</h6>
                                     </div>
                                 </div>
                             </a>
-                        </div>
-                        <!-- Item Block Ends -->
-                        <!-- Item Block Starts -->
-                        <div class="il-item">
-                            <a class="text-black" href="#">
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h5 class="mb-0-5">
-                                        	Paul Wesley
-                                            <span class="tag tag-primary pull-right">Ongoing</span>
-                                       	</h5>
-                                        <h6 class="media-heading">From: Florida, United States</h6>
-                                        <h6 class="media-heading">To: JF, Shirley Ann Trail, Lakeland, Florida, United States</h6>
-                                        <h6 class="media-heading">Payment: CASH</h6>
-                                        <span class="text-muted">Manual Assignment : 2017-10-24 16:51:15</span>
-                                    </div>
-                                </div>
-                            </a>
+                            <a class="btn btn-success mt-1" href="/admin/dispatcher/cancel?request_id=651">Assign Provider</a>
                         </div>
                         <!-- Item Block Ends -->
                     </div>

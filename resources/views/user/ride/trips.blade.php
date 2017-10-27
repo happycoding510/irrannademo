@@ -14,6 +14,121 @@
 
         <div class="row no-margin ride-detail">
             <div class="col-md-12">
+                <table class="table table-condensed" style="border-collapse:collapse;">
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                            <th>Payment</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr data-toggle="collapse" data-target="data" class="accordion-toggle collapsed">
+                            <td><span class="arrow-icon fa fa-chevron-right"></span></td>
+                            <td></td>
+                            <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>-</td>
+                                <td></td>
+                                <td>-</td>
+                            <td></td>
+                        </tr>
+                        <tr class="hiddenRow">
+                            <td colspan="12">
+                                <div class="accordian-body collapse row" id="data">
+                                    <div class="col-md-6">
+                                        <div class="my-trip-left">
+                                        
+                                            <div class="map-static">
+                                                <img src="" height="280px;">
+                                            </div>
+                                            <div class="from-to row no-margin">
+                                                <div class="from">
+                                                    <h5></h5>
+                                                    <h6></h6>
+                                                    <p></p>
+                                                </div>
+                                                <div class="to">
+                                                    <h5></h5>
+                                                    <h6></h6>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="mytrip-right">
+
+                                            <div class="fare-break">
+
+                                                <h4 class="text-center">
+                                                <strong></strong></h4>
+
+                                                <h5><span>
+                                                
+                                                </span></h5>
+                                                <h5><span>
+                                                
+                                                </span></h5>
+                                                
+                                                        <h5><span>
+                                                            
+                                                        </span></h5>
+                                                
+                                                    
+                                                        <h5><span>
+                                                            
+                                                        </span></h5>
+                                                <h5><strong></strong><span><strong>
+                                                
+                                                </strong></span></h5>
+                                                <h5 class="big"><strong> </strong><span><strong>
+                                                
+                                                </strong></span></h5>
+
+                                            </div>
+
+                                            <div class="trip-user">
+                                                <div class="user-img">
+                                                </div>
+                                                <div class="user-right">
+                                                    
+                                                        <h5></h5>
+                                                   
+                                                    <h5>- </h5>
+                                                    <div class="rating-outer">
+                                                        <input type="hidden" class="rating" value="" />
+
+                                                    </div>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <hr>
+                    <p style="text-align: center;">No trips Available</p>
+            </div>
+        </div>
+
+        <div class="row no-margin ride-detail">
+            <div class="col-md-12">
             @if($trips->count() > 0)
 
                 <table class="table table-condensed" style="border-collapse:collapse;">
