@@ -8,6 +8,9 @@
         <div class="container-fluid">
             
             <div class="box box-block bg-white">
+                <div class="col-md-12" style="height:50px;color:red;">
+                    ** Demo Mode : No Permission to Edit and Delete.
+                </div>
                 <h5 class="mb-1">@lang('admin.promocode.promocodes')</h5>
                 <a href="{{ route('admin.promocode.create') }}" style="margin-left: 1em;" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> @lang('admin.promocode.add_promocode')</a>
 

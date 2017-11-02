@@ -6,6 +6,9 @@
 <div class="content-area py-1">
     <div class="container-fluid">
         <div class="box box-block bg-white">
+            <div class="col-md-12" style="height:50px;color:red;">
+                    ** Demo Mode : No Permission to Edit and Delete.
+                </div>
             <h5 class="mb-1">
                 @lang('admin.fleet.fleet_owners')
                 @if(Setting::get('demo_mode', 0) == 1)
@@ -46,7 +49,7 @@
                                 {{ csrf_field() }}
                                 <input type="hidden" name="_method" value="DELETE">
                                 <a href="{{ route('admin.provider.index') }}?fleet={{$fleet->id}}" class="btn btn-info"> @lang('admin.fleet.show_provider')</a>
-                                @if(env('DEMO_MODE') == "0")
+                                @if( App/ env('DEMO_MODE') == "0")
                                  <a href="{{ route('admin.fleet.edit', $fleet->id) }}" class="btn btn-info"><i class="fa fa-pencil"></i> @lang('admin.edit')</a>
                                 <button class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i> @lang('admin.delete')</button>
                                 @endif

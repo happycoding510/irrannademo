@@ -6,6 +6,9 @@
 <div class="content-area py-1">
     <div class="container-fluid">
         <div class="box box-block bg-white">
+        <div class="col-md-12" style="height:50px;color:red;">
+                    ** Demo Mode : No Permission to Edit and Delete.
+                </div>
             <h5 class="mb-1">
                 @lang('admin.dispatcher.dispatcher')
                 @if(Setting::get('demo_mode', 0) == 1)

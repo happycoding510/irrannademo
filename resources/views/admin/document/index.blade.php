@@ -8,6 +8,9 @@
         <div class="container-fluid">
             
             <div class="box box-block bg-white">
+            <div class="col-md-12" style="height:50px;color:red;">
+                    ** Demo Mode : No Permission to Edit and Delete.
+                </div>
                 <h5 class="mb-1">@lang('admin.document.document')</h5>
                 <a href="{{ route('admin.document.create') }}" style="margin-left: 1em;" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> @lang('admin.document.add_Document')</a>
                 <table class="table table-striped table-bordered dataTable" id="table-2">

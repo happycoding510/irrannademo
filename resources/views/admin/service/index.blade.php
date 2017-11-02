@@ -6,6 +6,9 @@
 <div class="content-area py-1">
     <div class="container-fluid">
         <div class="box box-block bg-white">
+            <div class="col-md-12" style="height:50px;color:red;">
+                    ** Demo Mode : No Permission to Edit and Delete.
+                </div>     
             <h5 class="mb-1">Service Types</h5>
             <a href="{{ route('admin.service.create') }}" style="margin-left: 1em;" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> Add New Service</a>
             <table class="table table-striped table-bordered dataTable" id="table-2">
