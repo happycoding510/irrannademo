@@ -801,12 +801,17 @@ class UserApiController extends Controller
                 $surge = 1;
             }
 
+            /*
+            * Reported by Jeya, previously it was hardcoded. we have changed as based on surge percentage.
+            */ 
+            $surge_percentage = 1+Setting::get('surge_percentage')/100;
+
             return response()->json([
                     'estimated_fare' => round($total,2), 
                     'distance' => $kilometer,
                     'time' => $time,
                     'surge' => $surge,
-                    'surge_value' => '1.4X',
+                    'surge_value' => $surge_percentage,
                     'tax_price' => $tax_price,
                     'base_price' => $service_type->fixed,
                     'wallet_balance' => Auth::user()->wallet_balance

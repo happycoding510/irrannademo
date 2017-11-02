@@ -672,7 +672,11 @@ class TripController extends Controller
 
             $Payment = new UserRequestPayment;
             $Payment->request_id = $UserRequest->id;
-            $Payment->fixed = $Fixed;
+
+            /*
+            * Reported by Jeya, We are adding the surge price with Base price of Service Type.
+            */ 
+            $Payment->fixed = $Fixed + $Surge;
             $Payment->distance = $Distance;
             $Payment->commision = $Commision;
             $Payment->surge = $Surge;
