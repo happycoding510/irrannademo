@@ -42,8 +42,10 @@
                             <form action="{{ route('admin.dispatch-manager.destroy', $dispatcher->id) }}" method="POST">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="_method" value="DELETE">
+                                @if(env('DEMO_MODE') == "0")
                                 <a href="{{ route('admin.dispatch-manager.edit', $dispatcher->id) }}" class="btn btn-info"><i class="fa fa-pencil"></i> @lang('admin.edit')</a>
                                 <button class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i> @lang('admin.delete')</button>
+                                @endif
                             </form>
                         </td>
                     </tr>

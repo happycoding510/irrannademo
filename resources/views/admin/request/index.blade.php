@@ -77,10 +77,12 @@
                                     </a>
                                     <form action="{{ route('admin.requests.destroy', $request->id) }}" method="POST">
                                         {{ csrf_field() }}
+                                        @if(env('DEMO_MODE') == "0")
                                         {{ method_field('DELETE') }}
                                         <button type="submit" class="dropdown-item">
                                             <i class="fa fa-trash"></i> Delete
                                         </button>
+                                        @endif
                                     </form>
                                 </div>
                             </div>

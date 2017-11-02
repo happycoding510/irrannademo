@@ -47,12 +47,14 @@
                             <form action="{{ route('admin.service.destroy', $service->id) }}" method="POST">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
+                                @if(env('DEMO_MODE') == "0")
                                 <a href="{{ route('admin.service.edit', $service->id) }}" class="btn btn-info btn-block">
                                     <i class="fa fa-pencil"></i> Edit
                                 </a>
                                 <button class="btn btn-danger btn-block" onclick="return confirm('Are you sure?')">
                                     <i class="fa fa-trash"></i> Delete
                                 </button>
+                                @endif
                             </form>
                         </td>
                     </tr>

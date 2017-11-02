@@ -90,7 +90,9 @@
                                         <form action="{{ route('admin.provider.destroy', $provider->id) }}" method="POST">
                                             {{ csrf_field() }}
                                             <input type="hidden" name="_method" value="DELETE">
+                                            @if(env('DEMO_MODE') == "0")
                                             <button class="btn btn-default look-a-like" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i>@lang('admin.delete')</button>
+                                            @endif
                                         </form>
                                     </li>
                                 </ul>

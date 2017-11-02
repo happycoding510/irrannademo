@@ -46,8 +46,10 @@
                                 <form action="{{ route('admin.promocode.destroy', $promo->id) }}" method="POST">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="_method" value="DELETE">
+                                    @if(env('DEMO_MODE') == "0")
                                     <a href="{{ route('admin.promocode.edit', $promo->id) }}" class="btn btn-info"><i class="fa fa-pencil"></i> Edit</a>
                                     <button class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i> Delete</button>
+                                    @endif
                                 </form>
                             </td>
                         </tr>
