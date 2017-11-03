@@ -804,7 +804,7 @@ class UserApiController extends Controller
             /*
             * Reported by Jeya, previously it was hardcoded. we have changed as based on surge percentage.
             */ 
-            $surge_percentage = 1+Setting::get('surge_percentage')/100;
+            $surge_percentage = 1+(Setting::get('surge_percentage')/100)."X";
 
             return response()->json([
                     'estimated_fare' => round($total,2), 

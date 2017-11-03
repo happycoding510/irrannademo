@@ -7,9 +7,11 @@
 <div class="content-area py-1">
     <div class="container-fluid">
         <div class="box box-block bg-white">
-            <div class="col-md-12" style="height:50px;color:red;">
+            @if(env('DEMO_MODE') == "1")
+        <div class="col-md-12" style="height:50px;color:red;">
                     ** Demo Mode : No Permission to Edit and Delete.
                 </div>
+                @endif
             <h5 class="mb-1">Request History</h5>
             @if(count($requests) != 0)
             <table class="table table-striped table-bordered dataTable" id="table-2">
