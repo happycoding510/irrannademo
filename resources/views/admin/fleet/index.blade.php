@@ -6,14 +6,14 @@
 <div class="content-area py-1">
     <div class="container-fluid">
         <div class="box box-block bg-white">
-            @if(env('DEMO_MODE') == "1")
-        <div class="col-md-12" style="height:50px;color:red;">
+            @if(Setting::get('demo_mode') == 1)
+        <div class="col-md-12" style="hSetting::get('demo_mode', 0) == 0eight:50px;color:red;">
                     ** Demo Mode : No Permission to Edit and Delete.
                 </div>
                 @endif
             <h5 class="mb-1">
                 @lang('admin.fleet.fleet_owners')
-                @if(Setting::get('demo_mode', 0) == 1)
+                @if(Setting::get('demo_mode', 1) == 1)
                 <span class="pull-right">(*personal information hidden in demo)</span>
                 @endif
             </h5>
@@ -26,6 +26,7 @@
                         <th>@lang('admin.fleet.company_name')</th>
                         <th>@lang('admin.email')</th>
                         <th>@lang('admin.mobile')</th>
+                        <th>@lang('admin.picture')</th>
                         <th>@lang('admin.action')</th>
                     </tr>
                 </thead>
@@ -51,10 +52,12 @@
                                 {{ csrf_field() }}
                                 <input type="hidden" name="_method" value="DELETE">
                                 <a href="{{ route('admin.provider.index') }}?fleet={{$fleet->id}}" class="btn btn-info"> @lang('admin.fleet.show_provider')</a>
-                                @if( App/ env('DEMO_MODE') == "0")
+
+                                @if( Setting::get('demo_mode') == 0)
                                  <a href="{{ route('admin.fleet.edit', $fleet->id) }}" class="btn btn-info"><i class="fa fa-pencil"></i> @lang('admin.edit')</a>
                                 <button class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i> @lang('admin.delete')</button>
                                 @endif
+
                             </form>
                         </td>
                     </tr>
@@ -67,6 +70,7 @@
                         <th>@lang('admin.fleet.company_name')</th>
                         <th>@lang('admin.email')</th>
                         <th>@lang('admin.mobile')</th>
+                        <th>@lang('admin.picture')</th>
                         <th>@lang('admin.action')</th>
                     </tr>
                 </tfoot>

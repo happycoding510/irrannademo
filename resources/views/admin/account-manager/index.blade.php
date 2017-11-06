@@ -6,9 +6,11 @@
 <div class="content-area py-1">
     <div class="container-fluid">
         <div class="box box-block bg-white">
+        @if(Setting::get('demo_mode') == 1)
         <div class="col-md-12" style="height:50px;color:red;">
                     ** Demo Mode : No Permission to Edit and Delete.
                 </div>
+                @endif
             <h5 class="mb-1">
                 @lang('admin.account-manager.account_manager')
                 @if(Setting::get('demo_mode', 0) == 1)
@@ -45,7 +47,7 @@
                             <form action="{{ route('admin.account-manager.destroy', $account->id) }}" method="POST">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="_method" value="DELETE">
-                                @if(env('DEMO_MODE') == "0")
+                                @if( Setting::get('demo_mode') == 0)
                                 <a href="{{ route('admin.account-manager.edit', $account->id) }}" class="btn btn-info"><i class="fa fa-pencil"></i> @lang('admin.edit')</a>
                                 <button class="btn btn-danger" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i> @lang('admin.delete')</button>
                                 @endif

@@ -6,7 +6,7 @@
 <div class="content-area py-1">
     <div class="container-fluid">
         <div class="box box-block bg-white">
-            @if(env('DEMO_MODE') == "1")
+           @if(Setting::get('demo_mode') == 1)
         <div class="col-md-12" style="height:50px;color:red;">
                     ** Demo Mode : No Permission to Edit and Delete.
                 </div>
@@ -52,7 +52,7 @@
                             <form action="{{ route('admin.service.destroy', $service->id) }}" method="POST">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
-                                @if(env('DEMO_MODE') == "0")
+                                @if( Setting::get('demo_mode') == 0)
                                 <a href="{{ route('admin.service.edit', $service->id) }}" class="btn btn-info btn-block">
                                     <i class="fa fa-pencil"></i> Edit
                                 </a>

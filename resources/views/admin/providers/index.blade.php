@@ -6,7 +6,7 @@
 <div class="content-area py-1">
     <div class="container-fluid">
         <div class="box box-block bg-white">
-            @if(env('DEMO_MODE') == "1")
+            @if(Setting::get('demo_mode') == 1)
         <div class="col-md-12" style="height:50px;color:red;">
                     ** Demo Mode : No Permission to Edit and Delete.
                 </div>
@@ -88,14 +88,16 @@
                                     <li>
                                         <a href="{{ route('admin.provider.statement', $provider->id) }}" class="btn btn-default"><i class="fa fa-account"></i> @lang('admin.Statements')</a>
                                     </li>
+                                    @if( Setting::get('demo_mode') == 0)
                                     <li>
                                         <a href="{{ route('admin.provider.edit', $provider->id) }}" class="btn btn-default"><i class="fa fa-pencil"></i> @lang('admin.edit')</a>
                                     </li>
+                                    @endif
                                     <li>
                                         <form action="{{ route('admin.provider.destroy', $provider->id) }}" method="POST">
                                             {{ csrf_field() }}
                                             <input type="hidden" name="_method" value="DELETE">
-                                            @if(env('DEMO_MODE') == "0")
+                                            @if( Setting::get('demo_mode') == 0)
                                             <button class="btn btn-default look-a-like" onclick="return confirm('Are you sure?')"><i class="fa fa-trash"></i>@lang('admin.delete')</button>
                                             @endif
                                         </form>
