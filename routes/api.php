@@ -20,10 +20,6 @@ Route::post('/auth/google', 		'Auth\SocialLoginController@googleViaAPI');
 Route::post('/forgot/password',     'UserApiController@forgot_password');
 Route::post('/reset/password',      'UserApiController@reset_password');
 
-Route::get('/setting', function () {
-    return Setting::all();
-});
-
 Route::group(['middleware' => ['auth:api']], function () {
 
 	// user profile

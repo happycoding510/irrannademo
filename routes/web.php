@@ -122,6 +122,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/initsetup', function () {
+    return Setting::all();
+});
+
 Route::get('/ride', function () {
     return view('ride');
 });
