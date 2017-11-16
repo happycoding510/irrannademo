@@ -122,10 +122,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/setting', function () {
-    return Setting::all();
-});
-
 Route::get('/ride', function () {
     return view('ride');
 });
